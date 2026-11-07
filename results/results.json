@@ -1,0 +1,273 @@
+{
+ "env": {
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.30GHz",
+  "avx2": true,
+  "python": "3.12.3",
+  "liboqs": "0.12.0",
+  "openssl": "OpenSSL 3.0.13 30 Jan 2024",
+  "k_endorsements": 5,
+  "payload_bytes": 800,
+  "block_limit_bytes": 2000000,
+  "annual_tx": 100000000.0
+ },
+ "peak_tps": 31.70979198376459,
+ "scenarios": [
+  "LAN (1 Gbit/s, RTT 1 ms)",
+  "inter-city (100 Mbit/s, RTT 20 ms)",
+  "regional (10 Mbit/s, RTT 50 ms)"
+ ],
+ "rows": {
+  "ECDSA P-256": {
+   "pk_bytes": 33,
+   "sig_bytes_mean": 71.0,
+   "sig_bytes_max": 72,
+   "sign_ms": 0.020869,
+   "verify_ms": 0.0618455,
+   "verify_ms_uncached_key": 0.084095,
+   "nist_level": 0,
+   "tx_bytes_mean": 1344.9,
+   "tx_per_block": 1487,
+   "block_bytes": 1999907,
+   "validate_1000tx_ms": 322.640676,
+   "validate_block_ms": 473.020318,
+   "per_tx_ms": 0.32264067599999996,
+   "growth_TB_year": 0.13449275,
+   "inflation": 1.0,
+   "cpu_vs_ecdsa": 1.0,
+   "cpu_hours_year": 8.962240999999999,
+   "throughput": {
+    "LAN (1 Gbit/s, RTT 1 ms)": {
+     "tps": 1487.0,
+     "net_s": 0.018999256,
+     "headroom_vs_peak": 46.894031999999996
+    },
+    "inter-city (100 Mbit/s, RTT 20 ms)": {
+     "tps": 1487.0,
+     "net_s": 0.21999256,
+     "headroom_vs_peak": 46.894031999999996
+    },
+    "regional (10 Mbit/s, RTT 50 ms)": {
+     "tps": 668.9321534812077,
+     "net_s": 1.7499255999999999,
+     "headroom_vs_peak": 21.095444392183364
+    }
+   }
+  },
+  "Falcon-512": {
+   "pk_bytes": 897,
+   "sig_bytes_mean": 655.0,
+   "sig_bytes_max": 662,
+   "sign_ms": 0.171345,
+   "verify_ms": 0.031627,
+   "verify_ms_uncached_key": 0.03157,
+   "nist_level": 1,
+   "tx_bytes_mean": 8585.7,
+   "tx_per_block": 232,
+   "block_bytes": 1991881,
+   "validate_1000tx_ms": 183.025592,
+   "validate_block_ms": 42.492601,
+   "per_tx_ms": 0.183025592,
+   "growth_TB_year": 0.8585695,
+   "inflation": 6.383894713361588,
+   "cpu_vs_ecdsa": 0.5672737680477709,
+   "cpu_hours_year": 5.084044222222222,
+   "throughput": {
+    "LAN (1 Gbit/s, RTT 1 ms)": {
+     "tps": 232.0,
+     "net_s": 0.018935048,
+     "headroom_vs_peak": 7.316351999999999
+    },
+    "inter-city (100 Mbit/s, RTT 20 ms)": {
+     "tps": 232.0,
+     "net_s": 0.21935048,
+     "headroom_vs_peak": 7.316351999999999
+    },
+    "regional (10 Mbit/s, RTT 50 ms)": {
+     "tps": 129.8994051559653,
+     "net_s": 1.7435048,
+     "headroom_vs_peak": 4.096507640998522
+    }
+   }
+  },
+  "Falcon-1024": {
+   "pk_bytes": 1793,
+   "sig_bytes_mean": 1270.8,
+   "sig_bytes_max": 1278,
+   "sign_ms": 0.366015,
+   "verify_ms": 0.060738,
+   "verify_ms_uncached_key": 0.0607265,
+   "nist_level": 5,
+   "tx_bytes_mean": 16143.4,
+   "tx_per_block": 123,
+   "block_bytes": 1985639,
+   "validate_1000tx_ms": 346.327716,
+   "validate_block_ms": 42.919765,
+   "per_tx_ms": 0.346327716,
+   "growth_TB_year": 1.61434025,
+   "inflation": 12.00342032864897,
+   "cpu_vs_ecdsa": 1.073416161575362,
+   "cpu_hours_year": 9.620214333333333,
+   "throughput": {
+    "LAN (1 Gbit/s, RTT 1 ms)": {
+     "tps": 123.0,
+     "net_s": 0.018885112,
+     "headroom_vs_peak": 3.8789279999999997
+    },
+    "inter-city (100 Mbit/s, RTT 20 ms)": {
+     "tps": 123.0,
+     "net_s": 0.21885112,
+     "headroom_vs_peak": 3.8789279999999997
+    },
+    "regional (10 Mbit/s, RTT 50 ms)": {
+     "tps": 69.04561693189162,
+     "net_s": 1.7385111999999998,
+     "headroom_vs_peak": 2.1774225755641337
+    }
+   }
+  },
+  "ML-DSA-44": {
+   "pk_bytes": 1312,
+   "sig_bytes_mean": 2420,
+   "sig_bytes_max": 2420,
+   "sign_ms": 0.0531775,
+   "verify_ms": 0.021548,
+   "verify_ms_uncached_key": 0.021542,
+   "nist_level": 2,
+   "tx_bytes_mean": 19485,
+   "tx_per_block": 102,
+   "block_bytes": 1987470,
+   "validate_1000tx_ms": 116.390274,
+   "validate_block_ms": 11.789272,
+   "per_tx_ms": 0.116390274,
+   "growth_TB_year": 1.9485,
+   "inflation": 14.488066027213918,
+   "cpu_vs_ecdsa": 0.3607427167676775,
+   "cpu_hours_year": 3.2330631666666667,
+   "throughput": {
+    "LAN (1 Gbit/s, RTT 1 ms)": {
+     "tps": 102.0,
+     "net_s": 0.018899759999999998,
+     "headroom_vs_peak": 3.2166719999999995
+    },
+    "inter-city (100 Mbit/s, RTT 20 ms)": {
+     "tps": 102.0,
+     "net_s": 0.2189976,
+     "headroom_vs_peak": 3.2166719999999995
+    },
+    "regional (10 Mbit/s, RTT 50 ms)": {
+     "tps": 58.226979168017216,
+     "net_s": 1.739976,
+     "headroom_vs_peak": 1.8362460150425908
+    }
+   }
+  },
+  "ML-DSA-65": {
+   "pk_bytes": 1952,
+   "sig_bytes_mean": 3309,
+   "sig_bytes_max": 3309,
+   "sign_ms": 0.0829975,
+   "verify_ms": 0.0364675,
+   "verify_ms_uncached_key": 0.0351165,
+   "nist_level": 3,
+   "tx_bytes_mean": 27130,
+   "tx_per_block": 73,
+   "block_bytes": 1980490,
+   "validate_1000tx_ms": 187.995098,
+   "validate_block_ms": 13.466792,
+   "per_tx_ms": 0.187995098,
+   "growth_TB_year": 2.713,
+   "inflation": 20.172503531861103,
+   "cpu_vs_ecdsa": 0.5826763702912648,
+   "cpu_hours_year": 5.222086055555556,
+   "throughput": {
+    "LAN (1 Gbit/s, RTT 1 ms)": {
+     "tps": 73.0,
+     "net_s": 0.01884392,
+     "headroom_vs_peak": 2.3021279999999997
+    },
+    "inter-city (100 Mbit/s, RTT 20 ms)": {
+     "tps": 73.0,
+     "net_s": 0.2184392,
+     "headroom_vs_peak": 2.3021279999999997
+    },
+    "regional (10 Mbit/s, RTT 50 ms)": {
+     "tps": 41.765387646944426,
+     "net_s": 1.734392,
+     "headroom_vs_peak": 1.3171132648340393
+    }
+   }
+  },
+  "ML-DSA-87": {
+   "pk_bytes": 2592,
+   "sig_bytes_mean": 4627,
+   "sig_bytes_max": 4627,
+   "sign_ms": 0.1006225,
+   "verify_ms": 0.0550555,
+   "verify_ms_uncached_key": 0.0550435,
+   "nist_level": 5,
+   "tx_bytes_mean": 36920,
+   "tx_per_block": 54,
+   "block_bytes": 1993680,
+   "validate_1000tx_ms": 302.879207,
+   "validate_block_ms": 16.06131,
+   "per_tx_ms": 0.302879207,
+   "growth_TB_year": 3.692,
+   "inflation": 27.45185515651721,
+   "cpu_vs_ecdsa": 0.9387508442983798,
+   "cpu_hours_year": 8.413311305555556,
+   "throughput": {
+    "LAN (1 Gbit/s, RTT 1 ms)": {
+     "tps": 54.0,
+     "net_s": 0.018949439999999998,
+     "headroom_vs_peak": 1.7029439999999998
+    },
+    "inter-city (100 Mbit/s, RTT 20 ms)": {
+     "tps": 54.0,
+     "net_s": 0.2194944,
+     "headroom_vs_peak": 1.7029439999999998
+    },
+    "regional (10 Mbit/s, RTT 50 ms)": {
+     "tps": 30.664302766923516,
+     "net_s": 1.7449439999999998,
+     "headroom_vs_peak": 0.9670294520577
+    }
+   }
+  },
+  "SLH-DSA-128s": {
+   "pk_bytes": 32,
+   "sig_bytes_mean": 7856,
+   "sig_bytes_max": 7856,
+   "sign_ms": 137.059408,
+   "verify_ms": 0.2204735,
+   "verify_ms_uncached_key": 0.2204235,
+   "nist_level": 1,
+   "tx_bytes_mean": 40265,
+   "tx_per_block": 49,
+   "block_bytes": 1972985,
+   "validate_1000tx_ms": 1102.654395,
+   "validate_block_ms": 52.993931,
+   "per_tx_ms": 1.102654395,
+   "growth_TB_year": 4.0265,
+   "inflation": 29.939028924083573,
+   "cpu_vs_ecdsa": 3.417592625549793,
+   "cpu_hours_year": 30.62928875,
+   "throughput": {
+    "LAN (1 Gbit/s, RTT 1 ms)": {
+     "tps": 49.0,
+     "net_s": 0.01878388,
+     "headroom_vs_peak": 1.545264
+    },
+    "inter-city (100 Mbit/s, RTT 20 ms)": {
+     "tps": 49.0,
+     "net_s": 0.2178388,
+     "headroom_vs_peak": 1.545264
+    },
+    "regional (10 Mbit/s, RTT 50 ms)": {
+     "tps": 27.506734601542338,
+     "net_s": 1.7283879999999998,
+     "headroom_vs_peak": 0.867452382394239
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article."
+title: "Post-quantum signatures in a hybrid-blockchain medical ledger"
+authors:
+  - family-names: Aikenov
+    given-names: Yerassyl
+    orcid: "https://orcid.org/0009-0003-9287-7183"
+license: MIT
